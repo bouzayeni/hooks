@@ -1,0 +1,29 @@
+  
+    
+
+.bodys{
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    
+}
+.imgmv{
+ 
+    display: block;
+    margin: auto;
+    padding:auto;
+    width: 10%;
+    cursor: pointer;
+}
+.db{
+    color: white;
+}
+.dv{
+    color: white;
+}
+.imgmv:hover{
+z-index: 1;
+transform: scale(1.75);
+box-shadow: rgb(112, 50, 50) 10px 10px 10px;
+}
