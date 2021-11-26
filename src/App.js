@@ -40,6 +40,7 @@ function App() {
       Rating:""
     });
   const[searchTerm,setsearchTerm]=useState('')
+  const [rate, setRate] = useState(0)
   
   const handleChange = (e) =>{
     setMovie({...movie, [e.target.name]: e.target.value})
@@ -56,10 +57,10 @@ function App() {
   return (
     <div className="App">
       <h1 className='aa'> NETFLIX</h1>
-      <Filter/>
+      <Filter setRate={setRate} />
       <input className='search' type='text' placeholder="search..." onChange={handlonchange}/> 
       
-      <MoviesList  movies={movies.filter(el=>el.Title.toLowerCase().includes(searchTerm.toLowerCase()))}/>
+      <MoviesList  movies={movies.filter(el=>el.Title.toLowerCase().includes(searchTerm.toLowerCase())&& el.rating >= rate)}/>
       <div className="addMovies">
       <input type="text" placeholder="Title" name="Title"  onChange={ handleChange}></input>
       <input type="text" placeholder="Description" name="Description" onChange={ handleChange} ></input>

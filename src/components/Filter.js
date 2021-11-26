@@ -1,14 +1,14 @@
 import React from 'react'
 import StarRatingComponent from 'react-star-rating-component';
 
-const Filter = () => {
+const Filter = ({setRate}) => {
     return (
         <div>
           <StarRatingComponent 
           name="rate1" 
           starCount={5}
         //   value={}
-          onStarClick={(value)=>console.log(value)}
+          onStarClick={(value)=>setRate(value)}
         />  
         </div>
     )

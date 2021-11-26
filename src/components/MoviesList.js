@@ -32,7 +32,7 @@ const MoviesList= ({movies})=>{
     <Card.Text className='db' >
     {mv.Description}
     </Card.Text>
-    <a href= {mv.PosterURL}> link Movies </a>
+    <a href= {mv.PosterURL}> Link Movies </a>
     <StarRatingComponent 
                     starCount={5}
                     value={mv.rating}
