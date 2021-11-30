@@ -1,7 +1,4 @@
-  
-    
-
-.bodys{
+  .bodys{
     background-color: rgb(5, 5, 5);
     text-align: center;
     max-width: 70%;
@@ -25,5 +22,5 @@
 .imgmv:hover{
 z-index: 1;
 transform: scale(1.75);
-box-shadow: rgb(112, 50, 50) 10px 10px 10px;
+box-shadow: rgba(90, 36, 36, 0.233) 10px 10px 10px;
 }

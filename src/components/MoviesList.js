@@ -3,6 +3,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import { CardGroup,Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MovieCard-style.css';
+import { Link } from "react-router-dom"
 
 const MoviesList= ({movies})=>{
     return(
@@ -37,6 +38,9 @@ const MoviesList= ({movies})=>{
                     starCount={5}
                     value={mv.rating}
                 />
+                <Card.Link>
+                <Link to={`/Description/${mv.Title}`} state={{id:mv.id}}> <button type="button"> Description </button></Link>
+                </Card.Link>
   </Card.Body>
  
 </Card>
